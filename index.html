@@ -18,14 +18,160 @@
 </head>
 
 <body>
+    <!-- login  -->
+    <div class="container d-flex flex-column flex-lg-row justify-content-evently mt-5 pt-5">
+        <!-- heading -->
+        <div class="text-center text-lg-center mt-lg-5 pt-lg-5">
+            <h1 class="text-primary fw-bold fs-0">flexbook</h1>
+            <p class="w-75 mx-auto ma-lg-0 fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <!-- form  -->
+        <div class="" style="max-width: 28rem; width: 100%;">
+            <div class="bg-white shadow rounded p-3 input-group-lg">
+                <h1 class="text-center">Log in</h1>
+                <input type="email" class="form-control my-3" placeholder="email or username">
+                <input type="password" class="form-control my-3" placeholder="password">
+                <a href="#">
+                    <button class="btn btn-primary my-3 w-100" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">login</button>
+                </a>
+                <a href="#" class="text-decoration-none text-center">
+                    <p>Forgotten password?</p>
+                </a>
+                <!-- create from modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="">
+                                    <h1 class="modal-title fs-2" id="exampleModalLabel">sing up</h1>
+                                    <span class="text-muted fs-7">Join with us to discover somehting</span>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" name="" id="" class="form-control" placeholder="first name">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" name="" id="" class="form-control" placeholder="last name">
+                                    </div>
+                                </div>
+                                <input type="email" name="" class="form-control my-3" placeholder="Email" id="">
+                                <input type="password" name="" class="form-control my-3" placeholder="password" id="">
 
+                                <div class="row my-3">
+                                    <span class="text-muted fs-7">
+                                        Date of Birth <i type="button" class="fa-solid fa-circle-question"
+                                            data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
+                                            data-bs-content="Right popover"></i>
+                                    </span>
+                                    <div class="col">
+                                        <select name="" id="" class="form-select">
+                                            <option value="1">one</option>
+                                            <option value="2">two</option>
+                                            <option value="3">three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <select name="" id="" class="form-select">
+                                            <option value="1">one</option>
+                                            <option value="2">two</option>
+                                            <option value="3">three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <select name="" id="" class="form-select">
+                                            <option value="1">one</option>
+                                            <option value="2">two</option>
+                                            <option value="3">three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row my-3 jus">
+                                    <span class="text-muted fs-7">
+                                        Gender <i type="button" class="fa-solid fa-circle-question"
+                                            data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
+                                            data-bs-content="Right popover"></i>
+                                    </span>
+                                    <div class="col">
+                                        <div class="">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Male
+                                            </label>
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1" checked>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Female
+                                            </label>
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="">
+                                            <label class="form-check-label" for="flexRadioDefault3">
+                                                Coustom
+                                            </label>
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault3">
+                                        </div>
+                                    </div>
 
-    <!-- main js  -->
-    <script src="./main.js"></script>
+                                </div>
+
+                                <div class="d-none" id="selectGender">
+                                    <select name="" id="" class="form-select">
+                                        <option value="1">one</option>
+                                        <option value="2">two</option>
+                                        <option value="3">three</option>
+                                    </select>
+                                    <div class="my-3">
+                                        <span class="text-muted">Your pronoun is visible to everyone.</span>
+                                        <input type="text" name="" id="" class="form-control"
+                                            placeholder="Gender (optional)">
+                                    </div>
+
+                                </div>
+                                <div class="">
+                                    <span class="text-muted fs-7">Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing.</span>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-success btn-lg my-3" data-bs-dismiss="modal">Sing
+                                        up</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="text-center my-4">
+                    <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Create
+                        new Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+    <!-- main js  -->
+    <script src="./main.js"></script>
 
 </body>
 
