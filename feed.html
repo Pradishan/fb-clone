@@ -23,19 +23,18 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <!-- search -->
-                <div class="col, d-flex align-items-center">
+                <div class="col d-flex align-items-center">
                     <!-- logo  -->
                     <i class="fa-brands fa-facebook text-primary" style="font-size: 3rem;"></i>
                     <!-- seache bar  -->
                     <div class="input-group ms-2">
                         <!-- mobile -->
                         <span class="input-group-prepend d-lg-none" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" data-bs-auto-close="outside">
-                        <div class="input-group-text bg-gray rounded-circle border-0"
-                            style="min-height: 40px;">
-                            <i class="fa-solid fa-magnifying-glass me-2"></i>
-                        </div>
-                    </span>
+                            aria-expanded="false" data-bs-auto-close="outside">
+                            <div class="input-group-text bg-gray rounded-circle border-0" style="min-height: 40px;">
+                                <i class="fa-solid fa-magnifying-glass me-2"></i>
+                            </div>
+                        </span>
                         <!-- descktop -->
                         <span class="input-group-prepend d-none d-lg-block" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false" data-bs-auto-close="outside">
@@ -106,7 +105,39 @@
 
                 </div>
                 <!-- navbar -->
-                <div class="col"></div>
+                <div class="col d-none d-lg-flex justify-content-center">
+                    <!-- home -->
+                    <div class="mx-4 nav__btn nav__btn-active">
+                        <button class="btn px-4">
+                            <i class="fa-solid fa-house text-muted fs-4"></i>
+                        </button>
+                    </div>
+                    <!-- market -->
+                    <div class="mx-4 nav__btn ">
+                        <button class="btn px-4">
+                            <i class="fa-solid fa-shop text-muted fs-4"></i>
+                        </button>
+                    </div>
+                    <!-- group -->
+                    <div class="mx-4 nav__btn">
+                        <button type="button" class="btn px-4 ">
+                            <i class="fa-solid fa-users position-relative text-muted fs-4">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                    style="font-size: 0.5rem;">
+                                    99+
+                                    <span class="visually-hidden"></span>
+                                </span></i>
+                        </button>
+                    </div>
+                    <!-- gaming -->
+                    <div class="mx-4 nav__btn ">
+                        <button class="btn px-4">
+                            <i class="fa-solid fa-gamepad text-muted fs-4"></i>
+                        </button>
+                    </div>
+
+                </div>
                 <!-- menu -->
                 <div class="col"></div>
             </div>
