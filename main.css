@@ -35,7 +35,20 @@
 .active_chat:hover{
     color:#0d6efd !important;
 }
-
+/* edite */
+.edite-btn{
+    opacity: 0;
+}
+.edite-btn:hover{
+    opacity: 1;
+}
+.edit-heading:hover .edite-btn{
+    opacity: 1;
+}
+/* scrallbar */
+.scrallbar:hover{
+    overflow: auto !important;
+}
 @media (min-width:62em) {
     footer{
         position: fixed;
