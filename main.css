@@ -49,6 +49,17 @@
 .scrallbar:hover{
     overflow: auto !important;
 }
+.dropdown-item:active{
+    background: #d5d5d5 !important;
+}
+/* popovar avatar */
+.pop-avatar{
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
 @media (min-width:62em) {
     footer{
         position: fixed;
