@@ -1281,7 +1281,237 @@
       </div>
       <!-- ================== time line ================== -->
       <div class="col-12 col-lg-6">
+          <div class="d-flex justify-content-center flex-column w-100 mx-auto" style="padding-top: 56px;max-width: 680px;">
+          <!-- story -->
+          <div class="d-flex justify-content-between position-relative mt-5">
+            <!-- sto1 -->
+            <div class="mx-1 bg-white rounded story" type="button" style="width: 6em;height: 190px;">
+              <img src="https://source.unsplash.com/random/1" alt="story post" srcset="" class="card-img-top"
+              style="min-height: 125px;object-fit: cover;" />
+              <div class="d-flex align-items-center justify-content-center position-relative" style="min-height: 65px;">
+                <p class="mb-0 text-center fw-bold fs-7">Create Story</p>
+                <div class="position-absolute top-0 start-50 translate-middle">
+                  <i class="fas fa-circle-plus fs-3 text-primary bg-white rounded-circle p-1"></i>
+                </div>
+              </div>
+            </div>
+            <!-- sto2 -->
+            <div class="mx-1 bg-white rounded story" type="button" style="width: 6em;height: 190px;">
+              <img src="https://source.unsplash.com/random/1" alt="story post" srcset="" class="card-img-top rounded"
+              style="min-height: 190px;object-fit: cover;" />
+            </div>
+            <!-- sto3 -->
+            <div class="mx-1 bg-white rounded story" type="button" style="width: 6em;height: 190px;">
+              <img src="https://source.unsplash.com/random/1" alt="story post" srcset="" class="card-img-top rounded"
+              style="min-height: 190px;object-fit: cover;" />
+            </div>
+            <!-- sto4 -->
+            <div class="mx-1 bg-white rounded story" type="button" style="width: 6em;height: 190px;">
+              <img src="https://source.unsplash.com/random/1" alt="story post" srcset="" class="card-img-top rounded"
+              style="min-height: 190px;object-fit: cover;" />
+            </div>
+            <!-- sto5 -->
+            <div class="mx-1 bg-white rounded story d-none d-lg-block" type="button" style="width: 6em;height: 190px;">
+              <img src="https://source.unsplash.com/random/1" alt="story post" srcset="" class="card-img-top rounded"
+              style="min-height: 190px;object-fit: cover;" />
+            </div>
+            <!-- sto6 -->
+            <div class="mx-1 bg-white rounded story d-none d-lg-block" type="button" style="width: 6em;height: 190px;">
+              <img src="https://source.unsplash.com/random/1" alt="story post" srcset="" class="card-img-top rounded"
+              style="min-height: 190px;object-fit: cover;" />
+            </div>
 
+            <!-- next icon -->
+            <div class="position-absolute start-100 top-50 translate-middle d-none d-lg-block" type="button">
+              <i class="fas fa-arrow-right p-3 border text-muted bg-white rounded-circle"></i>
+            </div>
+
+          </div>
+          <!-- create post -->
+          <div class="mt-3 p-3 bg-white rounded shadow border">
+            <!-- avatar -->
+            <div class="d-flex" type="button">
+              <div class="p-1">
+                <img src="https://source.unsplash.com/random/1" alt="avatar" srcset="" class="rounded-circle me-2"
+                style="width: 38px; height: 38px; object-fit: cover" />
+              </div>
+                <input class="form-control bg-gray rounded-pill border-0" size="100" placeholder="what's on your mind pradi?" data-bs-toggle="modal" data-bs-target="#createModal" disabled>           
+            </div>
+            <!-- create modal -->
+            <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="false">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <!-- head -->
+                  <div class="modal-header align-items-center">
+                    <h5 class="text-dark text-center m-0" id="exampleModalLabel">Create post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <!-- body -->
+                  <div class="modal-body">
+                    <div class="my-1 p-1">
+                      <div class="d-flex flex-column">
+                        <!-- name -->
+                        <div class="d-flex align-items-center">
+                          <div class="p-2">
+                            <img src="https://source.unsplash.com/random/1" alt="avatar" srcset="" class="rounded-circle me-2"
+                            style="width: 38px; height: 38px; object-fit: cover" />
+                          </div>
+                          <div>
+                            <select class="form-select bg-gray fs-7 w-75 border-0">
+                              <option value="Public">Public</option>
+                              <option value="Pin to top">Pin to top</option>
+                              <option value="Hide">Hide</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- text -->
+                        <div>
+                          <textarea name="" id="" cols="630" rows="5" class="form-control border-0"></textarea>
+                        </div>
+                        <!-- emoje -->
+                        <div class="d-flex align-items-center justify-content-between">
+                          <img src="https://source.unsplash.com/random/1" alt="avatar" srcset="" class="rounded-circle me-2"
+                          style="width: 30px; height: 30px; object-fit: cover" />
+                          <i class="fas fa-laugh-wink fs-5 text-muted" type="button"></i>
+                        </div>
+                        <!-- action -->
+                        <div class="d-flex justify-content-between border border-light rounded p-3 mt-3">
+                          <p class="m-0">Add to your post</p>
+                          <div>
+                            <!-- i1 -->
+                            <i class="fas fa-image fs-5 text-success mx-1" type="button"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary w-100">post</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- actions -->
+            <div class="d-flex flex-column flex-lg-row mt-3">
+              <!-- action1 -->
+              <div class="d-flex align-items-center justify-content-center rounded dropdown-item p-1" type="button">
+                <i class="fas fa-video me-2 text-danger"></i>
+                <p class="m-0 text-muted">live video</p>
+              </div>
+              <!-- action1 -->
+              <div class="d-flex align-items-center justify-content-center rounded dropdown-item" type="button">
+                <i class="fas fa-photo-video me-2 text-success"></i>
+                <p class="m-0 text-muted">live video</p>
+              </div>
+              <!-- action1 -->
+              <div class="d-flex align-items-center justify-content-center rounded dropdown-item" type="button">
+                <i class="fas fa-smile me-2 text-warning"></i>
+                <p class="m-0 text-muted">live video</p>
+              </div>
+            </div>
+          </div>
+          <!-- create room -->
+          <div class="d-flex justify-content-between bg-white border shadow p-3 mt-3 rounded position-relative">
+            <!-- button -->
+            <button class="btn btn-info rounded-pill">
+              <i class="fas fa-video me-3"></i>Create Room
+            </button>
+            <!-- slider mobile -->
+            <div class="d-xxl-none">
+              <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+              class="rounded-circle me-2"
+              style="width: 38px; height: 38px; object-fit: cover" />
+              <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+              class="rounded-circle me-2"
+              style="width: 38px; height: 38px; object-fit: cover" />
+              <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+              class="rounded-circle me-2"
+              style="width: 38px; height: 38px; object-fit: cover" />
+              <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+              class="rounded-circle me-2"
+              style="width: 38px; height: 38px; object-fit: cover" />
+            </div>
+            <!-- slider desktop -->
+            <div class="d-none d-xxl-block" style="max-width: 450px;">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                    <img src="https://source.unsplash.com/random/90" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                    <img src="https://source.unsplash.com/random/1" alt="avatar" srcset=""
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slider button -->
+            <div class="position-absolute top-50 translate-middle start-0 d-none d-xxl-block" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="height: 30px;width: 30px;">
+              <div class="d-flex justify-content-center align-items-center p-2 bg-white rounded-circle border story">
+                <i class="fa-solid fa-chevron-left text-muted"></i>
+              </div>
+            </div>
+            <div class="position-absolute top-50 translate-middle start-100 d-none d-xxl-block" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="height: 30px;width: 30px;">
+              <div class="d-flex justify-content-center align-items-center p-2 bg-white rounded-circle border story">
+                <i class="fa-solid fa-chevron-right text-muted"></i>
+              </div>
+            </div>
+          </div>
+          <!-- posts -->
+          <i class="fas fa-chevrom-right text-muted "></i>
+          </div>
       </div>
       <!-- ================== chat bar ================== -->
       <div class="col-12 col-lg-3">
